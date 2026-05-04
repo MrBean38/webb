@@ -1,0 +1,70 @@
+Name of the Experiment:
+Design and Implementation of an Online Course Enrollment Website (Transform U)
+
+Objectives
+
+To design a fully functional online course enrollment system using HTML, CSS, and JavaScript.
+To implement a student registration and login system without using any server-side database (using localStorage).
+To create an admin dashboard for managing student enrollments.
+To build a multi-page responsive website with a consistent design system.
+
+Theory
+An Online Course Enrollment System is a web-based platform that allows students to browse available courses, register for them, and access their enrolled courses through a personal dashboard.
+In this project, instead of a traditional server-side database (like MySQL), we used the browser's built-in localStorage API to store and retrieve enrollment data. localStorage is a key-value storage system available in all modern browsers that persists data even after the browser is closed.
+Key Technologies Used:
+
+HTML5 — HTML is used to build the structure of all pages including the course cards, enrollment form, and student dashboard.
+CSS3 — is used to control the visual appearance of HTML elements. This project uses CSS Grid and Flexbox for layout, CSS variables for consistent theming, and keyframe animations for smooth transitions and hover effects.
+JavaScript  —  client-side scripting language that adds interactivity to web pages. In this project, JavaScript is used to open and close modal popups, handle form interactions, animate the statistics counter, and manage dynamic content without reloading the page.
+PHP - Embeds directly to the html to create dynamic, interactive content and powers a significant portion of the web. is a server-side scripting language that runs on the web server. It processes form submissions, manages user sessions, and communicates with the MySQL database.
+
+The website consists of 5 pages: Home (index.html), Courses (courses.html), About (about.html), Contact (contact.html), and Admin Panel (admin.html).
+
+Algorithm
+Student Enrollment Process:
+
+Start
+opens Courses page
+clicks "Enroll Now" 
+fill up the form
+Validate input 
+inputvalid??
+invalid--show error message
+valid--save to local storage
+Show success message
+student dashboard
+end
+
+Student Login Process:
+
+Start
+ enters phone number
+Search in localStorage 
+phone number found??
+not found--show error- end
+found--show dashboard
+end
+
+Admin Login Process:
+
+Start
+enter username and password
+check credentials
+wrong--show error --end
+correct--admin dashboard
+search or filter -- delete enrollment--export csv
+logout
+end
+
+
+XAMPP এ চালানোর নিয়ম:
+Step 1: ZIP extract করুন → folder টার নাম দিন transform-u
+Step 2: এই folder টি এখানে রাখুন:
+C:\xampp\htdocs\transform-u
+Step 3: XAMPP এ Apache ও MySQL start করুন
+Step 4: Browser এ যান:
+http://localhost/transform-u/index.php
+Admin Panel: http://localhost/transform-u/admin.php
+
+Username: admin
+Password: admin123
